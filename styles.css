@@ -84,6 +84,7 @@ body{
     background-color: rgb(29, 28, 28);
     font-family: 'STIX Two Text', serif;
     text-align: justify;
+    line-height: 25px;
 }
 
 nav {
