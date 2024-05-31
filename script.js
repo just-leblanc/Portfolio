@@ -24,3 +24,4 @@ document.addEventListener('DOMContentLoaded', function () {
     activateMenuLink();
     window.addEventListener('scroll', activateMenuLink);
 });
+

@@ -17,40 +17,24 @@ img {
 
 h1 {
     padding-top: 100px;
-    padding-left: 7%;
+    padding-left: 5%;
     font-size: 60px;
     color:#007bff ;
     font-family:'STIX Two Text', serif;
 }
 
 .Presentation {
-    padding-right: 600px;
-    padding-left: 7%;
+    padding-left: 5%;
 }
 
-.line {
-    border-bottom: 5px solid white;
-    margin-top: 45px;
-    width: 50%;
-    margin-left: 70px;
-}
-
-.introduction-container {
-    display: flex;
-    align-items: center; 
-}
 
 .introduction-text {
     flex-grow: 1; 
-    margin-right: 20px; 
-}
-
-.line1 {
-    border-left: 5px solid white;
-    margin-top: 160px;
-    height:390px;
-    left: 5%;
-    position: absolute;
+    margin-right: 600px; 
+    margin-left: 30px;
+    padding-bottom: 50px;
+    border-left : 5px solid white;
+    border-bottom: 5px solid white;
 }
 
 body::before {
@@ -65,8 +49,12 @@ body::before {
     background-position: center;
     z-index: -1;
 }
+  
+.hide {
+    display: none;
+}
 
-.button {
+.button_nav {
     display: inline-block;
     padding: 10px 20px;
     background-color: #007bff; 
@@ -75,7 +63,38 @@ body::before {
     border-radius: 5px; 
 }
 
-.button:hover {
+.btn_nav:focus,
+.btn_nav:active {
+  outline: none;
+}
+
+.animate_content {
+    animation: animate 3s ease;
+}
+  
+@keyframes animate {
+    10% {
+      transform: scale(1, 0.002);
+    }
+    35% {
+      transform: scale(0.2, 0.002);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(0.2, 0.002);
+      opacity: 0;
+    }
+    85% {
+      transform: scale(1, 0.002);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+}
+  
+
+.buttonabout:hover {
     background-color: #0056b3; 
 }
 
@@ -138,89 +157,3 @@ nav ul li a {
     margin-right: 8px; 
 }
 
-h2 {
-    margin-left: 120px;
-    font-size: 60px; 
-    font-family:'STIX Two Text', serif;
-    color:#007bff ;
-    
-}
-
-.aboutme{
-    color: white;
-    padding-top: 20px;
-    padding-right: 300px;
-    background-color: transparent;
-    width: 102%;
-    transition: background-color 0.5s ease;
-}
-
-h3 {
-    font-size: 30px; 
-    font-family:'STIX Two Text', serif;
-    color:#007bff ;
-} 
-
-.studies{
-    padding-right: 600px;
-}
-.interest{
-    padding-right: 600px;
-}
-.Proexp{
-    padding-right: 600px;
-}
-
-.deb{
-    padding-right: 600px;
-    padding-left: 50px;
-    padding-bottom: 30px;
-}
-.vertical-menu {
-    width: 200px;
-    height: 100vh;
-    position: sticky;
-    left: 0;
-    padding-top: 200px;
-    overflow-y: auto;
-}
-  
-.vertical-menu a {
-    background-color: transparent; 
-    color: white; 
-    display: block; 
-    padding: 25px; 
-    margin-bottom: 10px;
-    font-size: 18px;
-    text-decoration: none;
-}
-  
-.vertical-menu a:hover {
-    background-color: #007bff; 
-}
-  
-.vertical-menu a.active {
-    background-color: #007bff ;
-    color: white;
-}
-
-.aboutme-content {
-    display: flex;
-    height: 100vh; 
-}
-
-.text{
-    flex: 1;
-    overflow-x : hidden;
-    border-left: 2px solid white;
-    padding-left: 20px;
-    max-width: calc(100vw - 200px);
-}
-
-h4 {
-    margin-top: 20px;
-    font-size: 20px; 
-    font-family:'STIX Two Text', serif;
-    color:white ;
-    
-}
